@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-contenirer {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  min-height: 450px;
+  align-items: center;
+  color: white;
+
+}
+
+.img-header {
+  position: absolute;
+  background-image: url(/header.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+
+}
+
+.conteiner-cab {
+  grid-column: 2/4;
+
+}
+
+.pal-cabecalho {
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  color: white;
+  background-color: #333;
+  border: 1px solid #666;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+section {
+  font-size: 18px;
+  display: grid;
+  padding-bottom: 2em;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  grid-row: auto;
+  
+ 
+}
+
+.conteiner-Pri {
+  grid-column: 2/4;
+
+
+}
+
+.conteiner-Sec {
+  columns: 2;
+  column-gap: 2em;
+
+}
+.item01, .item02{
+  padding: 1em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 1em 0px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  padding: 2em 1em 1em;
+  background-color: #333;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  grid-column: 2/4;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+li{
+  width: 31%;
+  margin-bottom: 1em;
+  background: white;
+  
+}
+
+.card{
+  display: block;
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content{
+  padding: 1.5em;
+}
+
+h3{
+  margin: 0px;
+  padding: 1em 0px;
+  text-align: center;
+}
+p{
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+}
+
+
+.Content-Meio{
+  grid-column: 2/4;
+}
+
+.perna-prin{
+ 
+  padding: 0px;
+
+}
+
+.perna01{
+  background-color: #2690D4;
+  color: white;
+  grid-column: 1/3;
+  padding: 2em;
+}
+.perna02{
+  background-color: #333333;
+  color: white;
+  grid-column: 3/5;
+  padding: 2em;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  color: white;
+  background-color: black;
+  padding: 2em;
+  justify-items: center;
+ 
+}
+
+
+.radope01{  
+ grid-column: span 2;
+}
+.rodape02{
+  grid-column: span 2;
+}
+
+  
